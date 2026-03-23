@@ -12,63 +12,78 @@
 
         .active {display: block;}
 
-        input {width: 80%; padding: 12px; margin: 10px 0; border: 2px solid #ffcc00; border-radius: 15px;outline: none;}
+        input {width: 80%; padding: 12px; margin: 10px 0; border: 2px solid #4f2ea8a4; border-radius: 15px;outline: none;}
 
-        button {padding: 10px 20px; background-color: #ffcc00; border: none; cursor: pointer; border-radius: 5px;}
+        button {padding: 10px 20px; background-color: #4f2ea8a4; border: none; cursor: pointer; border-radius: 5px;}
 
         h3 {color: #d35400; padding: 5px;}
 
-        h2{color: black; padding: 10px 0 10px;}
+        h2{color: #4f2ea8a4; padding: 10px 0 10px;}
 
-        h1 {font-size: 40px; padding: 15px;}
+        h1 { padding: 5px; text-align: center; }
 
-        img{width: 100%; border-radius: 10px; }
+        img {width: 100%; border-radius: 10px;}
+
+        .separatori {color: black;}
 
     </style>
 </head>
 <body>
 
      <div id="livello1" class="step active">
-        <h1>benvenuta Martina nella caccia al tesoro</h1>
-        <h2>o-o-o-o-o-o</h2>
-        <h3> Livello 1 della caccia al tesoro</h3>
-        <p>domanda facile, tu Martina, sei una principessa bellissima?</p>
+        <h1>BENVENUTA</h1>
+        <h1>🦋Martina🦋</h1>
+        <h1>nella caccia al tesoro</h1>
+        <img src="uovo_pasqua.png" width="600px">
+        <h3>pensavi fosse facile ricevere il tuo Uovo....bhe non lo sarà!!🌷</h3>
+        <h2 class="separatori">o-o-o-o-o-o-o-o-o-o-o-o</h2>
+        <h2>se sei pronta per cominciare la caccia al tesoro digita "si"</h2>
         <input type="text" id="ans1" placeholder="Risposta...">
         <br>
         <button onclick="vaiAl(2, 'si', 'ans1')">Verifica</button>
     </div>
 
-      <div id="livello2" class="step">
-        <h3>🐣 Livello 1 della caccia al tesoro</h3>
-        <p>Sono tondo, ma non sono una palla. Se mi rompi, faccio la frittata. Chi sono?</p>
+       <div id="livello2" class="step">
+        <h2>bene, inizia la sfida!!⚔️⚔️</h2>
+        <h2>o-o-o-o-o-o-o</h2>
+        <h3> Livello 1 della caccia al tesoro</h3>
+        <p>domanda facile, tu Martina, sei una principessa bellissima?</p>
         <input type="text" id="ans2" placeholder="Risposta...">
         <br>
-        <button onclick="vaiAl(3, 'uovo', 'ans2')">Verifica</button>
+        <button onclick="vaiAl(3, 'si', 'ans2')">Verifica</button>
     </div>
 
-    <div id="livello3" class="step">
-        <h4>bene hai indovinato, proseguiamo</h4>
-        <h2>🐰 Livello 2 della caccia al tesoro</h2>
-        <p>sono piccolo e salto in alto, se ti vedo scappo. cosa sono?</p>
+      <div id="livello3" class="step">
+        <h4>bene! continuiamo</h4>
+        <h3> 🐣Livello 2 della caccia al tesoro</h3>
+        <p>Sono tondo, ma non sono una palla. Se mi rompi, faccio la frittata. Chi sono?</p>
         <input type="text" id="ans3" placeholder="Risposta...">
         <br>
-        <button onclick="vaiAl(4, 'coniglio', 'ans3')">Verifica</button>
+        <button onclick="vaiAl(4, 'uovo', 'ans3')">Verifica</button>
     </div>
 
-     <div id="livello4" class="step">
-        <h4>benissimo! ultima sfida per te</h4>
+    <div id="livello4" class="step">
+        <h4>bene hai indovinato, proseguiamo</h4>
         <h2>🐰 Livello 3 della caccia al tesoro</h2>
-        <p>il dono che ti ho portotato è speciale, il suo gusto saprai indovinare?</p>
-        <input type="text" id="ans4" placeholder="inserisci il gusto speciale dell'uovo">
+        <p>sono piccolo e salto in alto, se ti vedo scappo. cosa sono?</p>
+        <input type="text" id="ans4" placeholder="Risposta...">
         <br>
-        <button onclick="vaiAl(5, 'cocco', 'ans4')">Verifica</button>
+        <button onclick="vaiAl(5, 'coniglio', 'ans4')">Verifica</button>
     </div>
 
-    <div id="livello5" class="step">
+     <div id="livello5" class="step">
+        <h4>benissimo! ultima sfida per te</h4>
+        <h2> 🥕 Livello 4 della caccia al tesoro</h2>
+        <p>il dono che ti ho portotato è speciale, il suo gusto saprai indovinare?</p>
+        <input type="text" id="ans5" placeholder="inserisci il gusto speciale dell'uovo">
+        <br>
+        <button onclick="vaiAl(6, 'cocco', 'ans5')">Verifica</button>
+    </div>
+
+    <div id="livello6" class="step">
         <h2>🎉 Complimenti!</h2>
         <p>Hai vinto! Il tuo regalo è nascosto... <b>vicino a dove lo studio diventa realtà</b></p>
         <img src="uovo_misterioso.png">
-        
 
     </div>
 
@@ -89,8 +104,6 @@
             }
         }
     </script>
-
-    
     
 
 </body>
